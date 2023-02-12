@@ -1,0 +1,109 @@
+
+body {
+    height: 100vh;
+    background: url(background-pic.jpg) no-repeat center center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container {
+    width: 650px;
+    padding: 20px 10px;
+    background: rgba(248, 248, 248, 0.452);
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/* #task-container {
+    width: 550px;
+    padding: 20px 10px;
+    background: rgba(248, 248, 248, 0.452);
+    border-radius: 20px;
+    box-shadow: 0 0 3px;
+    margin: 20px;
+
+} */
+
+input {
+    flex: 9;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task {
+    transition: 0.4s;
+    flex: 1;
+    font-size: 1.2rem;
+    padding: 5px;
+    background-color: #fff;
+    color:rgb(82, 145, 170);
+    
+    border:rgb(82, 145, 170) solid 2px;
+    border-radius: 10px;
+    
+}
+
+#add-task:hover {
+    background-color:rgb(82, 145, 170);
+    color: #fff;
+}
+
+/* Style for new task added to list */
+
+.task {
+    width: 98.5%;
+    background-color: rgba(248, 248, 248, 0.452);
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex: 9;
+    padding: 3px;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.task button {
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task .checkTask {
+    color: green;
+    margin-right: 5px;
+    border: solid 2px green;
+    font-size: 1.2rem;
+}
+
+.task .checkTask:hover {
+    background: green;
+    color: #fff;
+}
+
+
+.task .deleteTask {
+    color: red;
+    border: solid 2px red;
+    font-size: 1.2rem;   
+}
+
+.task .deleteTask:hover {
+    background-color: red;
+    color: #fff;
+}
